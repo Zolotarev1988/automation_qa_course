@@ -69,6 +69,16 @@ class ButtonsPageLocators:
     SUCCESS_CLICK_ME = (By.XPATH, "//p[@id ='dynamicClickMessage']")
 
 
-class LinksPageLokator:
+class LinksPageLocators:
+
     SIMPLE_LINK = (By.XPATH, "//a[@id ='simpleLink']")
     BAD_REQUEST = (By.XPATH, "//a[@id ='bad-request']")
+
+
+class UploadAndDownloadPageLocators:
+    #upload_file
+    UPLOAD_FILE = (By.XPATH, "//input[@id ='uploadFile']")
+    UPLOADED_RESULT = (By.XPATH, "//p[@id ='uploadedFilePath']")
+
+    #download_file
+    DOWNLOAD_FILE = (By.XPATH, "//a[@id ='downloadButton']")
