@@ -18,7 +18,7 @@ class BasePage:
         return wait(self.driver, timout).until(EC.visibility_of_all_elements_located(locator)) #видно все элементы
 
     def element_is_present(self, locator, timout=5):
-        return wait(self.driver, timout).until(EC.presence_of_element_located(locator)) # Когда не видно элемент но он есть в доме дерева
+        return wait(self.driver, timout).until(EC.presence_of_element_located(locator)) # Когда не видно элемент но он есть в доме дерева и нет необходимости на него смотреть
 
     def elements_are_present(self, locator, timout=5):
         return wait(self.driver, timout).until(EC.presence_of_all_elements_located(locator)) # # Когда не видно элементЫ но они есть в доме дерева

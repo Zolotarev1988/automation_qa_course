@@ -82,3 +82,10 @@ class UploadAndDownloadPageLocators:
 
     #download_file
     DOWNLOAD_FILE = (By.XPATH, "//a[@id ='downloadButton']")
+
+
+class DynamicPropertiesPageLocators:
+    ENABLE_BUTTON = (By.XPATH, "//button[@id ='enableAfter']")
+    COLOR_CHANGE_BUTTON = (By.XPATH, "//button[@id ='colorChange']")
+    VISIBLE_AFTER_FIVE_SEC_BUTTON = (By.XPATH, "//button[@id ='visibleAfter']")
+
